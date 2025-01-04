@@ -1,0 +1,21 @@
+{
+  "name": "post-comments-mini-app",
+  "version": "1.0.0",
+  "description": "This is an app that you can create posts and add comments to them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.1"
+  },
+  "dependencies": {
+    "lit-html": "^3.2.1",
+    "lite-server": "^2.6.1",
+    "page": "^1.11.6"
+  }
+}
