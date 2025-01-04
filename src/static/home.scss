@@ -1,0 +1,30 @@
+$home-background-color: cornsilk;
+
+#home-container{
+    width: 100%;
+    height: 92.8vh;
+    background-color: $home-background-color;
+    #home-content{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:3em;
+        h1{
+            font-size: 3.4em;
+            width: 80%;
+        }
+        button{
+            font-size: 2em;
+            padding: 0.3em 3em;
+            cursor: pointer;
+            border-radius: 0.5em;
+            background-color: azure;
+            color: black;
+        }
+    }
+}
