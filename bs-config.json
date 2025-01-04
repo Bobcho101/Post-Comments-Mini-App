@@ -2,6 +2,6 @@
     "port": 3005,
     "server": { 
         "baseDir": "./src",
-        "routes": { "node_modules": "node_modules" }
+        "routes": { "/node_modules": "node_modules" }
      }
   }

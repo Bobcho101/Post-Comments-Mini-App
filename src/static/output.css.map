@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"output.css"}
+{"version":3,"sourceRoot":"","sources":["nav.scss","input.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA,kBALkB;EAMlB;;AACA;EACI;EACA;EACA;EACA;EACA;;AAEI;EACI;EACA;EACA;;;ACdhB;EACI;EACA;EACA;EACA","file":"output.css"}
