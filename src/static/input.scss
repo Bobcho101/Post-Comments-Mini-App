@@ -1,6 +1,7 @@
 @use 'home';
 @use 'nav';
 @use 'create';
+@use 'posts';
 
 
 *{
@@ -11,7 +12,11 @@
 }
 main{
     width: 100%;
+    background-color: cornsilk;
 }
 header{
     width: 100%;
+}
+body{
+    background-color: cornsilk;
 }

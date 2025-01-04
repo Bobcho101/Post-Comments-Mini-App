@@ -1,0 +1,26 @@
+#posts-container{
+    padding: 4em ;
+    width: 100%;
+    background-color: cornsilk;
+    #posts-content{
+        width: 100%;
+        gap: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 4em;
+        .post-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            img{
+                border: 3px solid black;
+                padding: 5px;
+                width: 20em;
+                height: 15em;
+                cursor: pointer;
+            }
+        }
+    }
+}

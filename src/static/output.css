@@ -47,6 +47,76 @@
   padding-bottom: 0.2em;
 }
 
+#create-post-container {
+  width: 100%;
+  height: 92.8vh;
+  background-color: cornsilk;
+}
+#create-post-container #create-post-content {
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#create-post-container #create-post-content #create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+#create-post-container #create-post-content #create-form button {
+  align-self: center;
+  font-size: 2em;
+  padding: 0.3em 5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  background-color: azure;
+}
+#create-post-container #create-post-content #create-form .create-form-el {
+  display: flex;
+  gap: 1em;
+  font-size: 2em;
+  flex-direction: row;
+  align-items: center;
+}
+#create-post-container #create-post-content #create-form .create-form-el input {
+  font-size: 1.1em;
+  padding: 0.1em 0.2em;
+}
+
+#posts-container {
+  padding: 4em;
+  width: 100%;
+  background-color: cornsilk;
+}
+#posts-container #posts-content {
+  width: 100%;
+  gap: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 4em;
+}
+#posts-container #posts-content .post-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+#posts-container #posts-content .post-box img {
+  border: 3px solid black;
+  padding: 5px;
+  width: 20em;
+  height: 15em;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,10 +126,15 @@
 
 main {
   width: 100%;
+  background-color: cornsilk;
 }
 
 header {
   width: 100%;
+}
+
+body {
+  background-color: cornsilk;
 }
 
 /*# sourceMappingURL=output.css.map */
