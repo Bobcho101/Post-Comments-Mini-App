@@ -5,6 +5,7 @@ $create-background-color: cornsilk;
     height: 92.8vh;
     background-color:$create-background-color;
     #create-post-content{
+        background-color: azure;
         width: fit-content;
         height: fit-content;
         border: 2px solid black;
@@ -26,7 +27,7 @@ $create-background-color: cornsilk;
                 padding: 0.3em 5em;
                 border-radius: 0.3em;
                 cursor: pointer;
-                background-color: azure;
+                background-color: white;
             }
             .create-form-el{
                 display: flex;
