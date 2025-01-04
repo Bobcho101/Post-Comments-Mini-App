@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-// import {} from "";
+import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js';
+
 const firebaseConfig = {
   apiKey: "AIzaSyC9CqEFR1UUGbjheAGm58umRIADgXU_uKE",
   authDomain: "posts-with-comments-mini-app.firebaseapp.com",
@@ -12,3 +13,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
+export{
+    database
+}
