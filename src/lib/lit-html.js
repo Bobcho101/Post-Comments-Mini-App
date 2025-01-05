@@ -1,4 +1,4 @@
-import { render, html } from "../../node_modules/lit-html/lit-html.js";
+import { render, html } from "lit-html";
 
 const mainEl = document.querySelector("main");
 const headerEl = document.querySelector("header");
