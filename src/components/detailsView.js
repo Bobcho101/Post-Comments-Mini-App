@@ -76,7 +76,7 @@ async function commentSubmitHandler(e) {
             author,
             comment
         });
-        page.redirect('/posts')
+        location.reload();
     } catch(err){
         console.log(err.message);
     }
