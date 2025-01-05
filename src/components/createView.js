@@ -46,7 +46,9 @@ async function createSubmitHandler(e) {
         const response = await set(newPostRef, {    
             author,
             image: photoBase64,
-            comments: {}
+            comments: {
+                
+            }
         });
         page.redirect('/posts');
     }

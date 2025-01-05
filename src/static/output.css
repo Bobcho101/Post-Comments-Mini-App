@@ -101,6 +101,7 @@
   gap: 5%;
   display: flex;
   flex-direction: row;
+  align-items: end;
   flex-wrap: wrap;
   row-gap: 4em;
 }
@@ -113,9 +114,128 @@
 #posts-container #posts-content .post-box img {
   border: 3px solid black;
   padding: 5px;
-  width: 20em;
-  height: 15em;
+  max-width: 20em;
+  max-height: 15em;
   cursor: pointer;
+}
+
+#detailed-post-container {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding-bottom: 10em;
+}
+#detailed-post-container a button {
+  font-size: 2em;
+  padding: 0.2em 1.3em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  background-color: azure;
+}
+#detailed-post-container #detailed-post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#detailed-post-container #detailed-post-content #detailed-post-info img {
+  max-width: 25em;
+  max-height: 100%;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #comments-container .comment-box {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+  width: 40em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #comments-container .comment-box .comment-box-text {
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #comments-container .comment-box .comment-box-text h2 {
+  font-size: 1.5em;
+  text-wrap: wrap;
+  white-space: normal;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-weight: lighter;
+  padding-bottom: 1em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form button {
+  margin-left: 12.5%;
+  font-size: 1.5em;
+  padding: 0.4em 4em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  background-color: azure;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form .comment-add-headers1 {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form .comment-add-headers1 input {
+  font-size: 1.3em;
+  padding: 0.2em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form .comment-add-headers2 {
+  display: flex;
+  align-items: start;
+  gap: 0.7em;
+}
+#detailed-post-container #detailed-post-content #detailed-post-comments #add-comment-form .comment-add-headers2 textarea {
+  resize: none;
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1.3em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  background-color: cornsilk;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: cornsilk;
 }
 
 .lds-ring {
@@ -160,25 +280,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  width: 100%;
-  background-color: cornsilk;
-}
-
-header {
-  width: 100%;
-}
-
-body {
-  background-color: cornsilk;
 }
 
 /*# sourceMappingURL=output.css.map */

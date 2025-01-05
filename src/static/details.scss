@@ -1,0 +1,105 @@
+#detailed-post-container{
+    position: absolute;
+    left: 50%;
+    top:20%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-bottom: 10em;
+    a{
+        button{
+            font-size: 2em;
+            padding: 0.2em 1.3em;
+            cursor: pointer;
+            border-radius: 0.3em;
+            background-color: azure;
+        }
+    }
+    #detailed-post-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+        #detailed-post-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                max-width: 25em;
+                max-height: 100%;
+            }
+        }
+        #detailed-post-comments{
+            display: flex;
+            flex-direction: column;
+            gap:5em;
+            #comments-container{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap:3em;
+                .comment-box{
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 2px solid black;
+                    width: 40em;
+                    .comment-box-text{
+                        max-width: 40em;
+                        display: flex;
+                        flex-direction: column;
+                        gap:2em;
+                        h1{
+
+                        }
+                        h2{
+                            font-size: 1.5em;
+                            text-wrap: wrap;
+                            white-space: normal; 
+                            max-width: 100%; 
+                            word-wrap: break-word;
+                            font-weight: lighter;
+                            padding-bottom: 1em;
+                        }
+                    }
+                    
+                }
+            }
+            #add-comment-form{
+                display: flex;
+                flex-direction: column;
+                gap:1em;
+                align-items: center;
+                button{
+                    margin-left: 12.5%;
+                    font-size: 1.5em;
+                    padding: 0.4em 4em;
+                    cursor: pointer;
+                    border-radius: 0.3em;
+                    background-color: azure;
+                }
+                .comment-add-headers1{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3em;
+                    input{
+                        font-size: 1.3em;  
+                        padding: 0.2em;
+                    }
+                }
+                .comment-add-headers2{
+                    display: flex;
+                    align-items: start;
+                    gap: 0.7em;
+                    textarea{
+                        resize: none;
+                        width: 100%;
+                        padding: 0.2em;
+                        font-size: 1.3em;  
+                    }
+                }
+            }
+        }
+    }
+}
+
