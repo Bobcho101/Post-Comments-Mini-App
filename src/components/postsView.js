@@ -15,10 +15,16 @@ const template = (posts) => html`
 
 export default async function postsView(ctx) {
     const dbRef = ref(database, 'Posts/');
-    renderInMain(html`<div class="lds-ring"><div></div><div></div><div></div><div></div></div>`);
-    const posts = await get(dbRef);
-    let data = await posts.val();
-    data = Object.entries(data).map(([key, value]) => ({ key, ...value }));
+    try{
+        renderInMain(html`<div class="lds-ring"><div></div><div></div><div></div><div></div></div>`);
+        const posts = await get(dbRef);
+        let data = await posts.val();
+        data = Object.entries(data).map(([key, value]) => ({ key, ...value }));
+        renderInMain(template(data));
+    } catch(err){
+        console.log(err.message);
+    }
+    
 
-    renderInMain(template(data));
+    
 }

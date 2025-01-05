@@ -4,5 +4,7 @@ const template = () => html`
 `;
 
 export default async function postDetailsView(ctx) {
+    const postID = ctx.params.postID;
+    
     renderInMain(template())
 }
